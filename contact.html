@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+	<head>
+
+    	<meta charset="utf-8" />
+    	<meta name="description" content="Harmon Soonthorn Gallery" />
+		<meta name="keywords" content="Soonthorn,Harmon,Gallery,Painting,Oil Painting,Cheevasit " />
+		<meta name="author" content="Soonthorn Cheevasit" />
+
+
+    	<link type="text/css" rel="stylesheet" href="stylesheet/ss1.css" />
+    	<link type="text/css" rel="stylesheet" href="stylesheet/imgslide.css" />
+    	<link href='http://fonts.googleapis.com/css?family=Mako|Ovo|Rock+Salt|Sacramento' rel='stylesheet' type='text/css'>
+
+    	<title>Contact</title>
+    
+		<link rel="icon" href="img/favi.ico" />
+	
+	</head>
+    
+    <body>
+    
+		<div id="header">
+			<p><a href="index.html"> 
+  					<img src="img/logo.jpg" alt="logo" />
+  				</a></p>
+		</div>
+		
+		<div id="navbar">
+  			<ul id="nav"> 
+  			
+  			
+  				
+  				<li>
+  					<a href="index.html">Home</a>
+  				</li>	
+  				
+  				<li>
+  					<a href="about.html">About Us</a>
+  				</li>
+  				
+  				
+  				<li>
+  					<a href="gallery.html">Gallery</a>
+  				</li>
+  				
+  				
+  				<li>
+  					<a href="question.html">Q&A</a>
+  				</li>
+  				
+  				
+  				<li>
+  					<a href="contact.html">Contact Us</a>
+  				</li>
+  				
+  				
+  			</ul>
+  		</div>
+  		
+  		
+  		<div id="coming">
+			<p class="h1">Sponsors!</p>
+			
+			<p class="description">A Pretty Autumn
+				<img src="img/prettyautumn.jpg" alt="pttyautumn" /></p>
+			<p class="description">Bright Autumn Tree
+				<img src="img/brightautumn.jpg" alt="brgaut" /></p>
+			<p class="description">Mountain Lakes
+				<img src="img/mountainlake.jpg" alt="mountainlake" /></p>
+			<br />
+			<br />
+		</div>
+		
+		<div id="recommend">
+			<p class="h1">Recommended!</p>
+			<p class="description">A Pretty Autumn<a href="prettyautumn.html" onclick="window.open(this.href); return false;">
+				<img src="img/prettyautumn.jpg" alt="ptyaut" /></a></p>
+			<p class="description">Bright Autumn Tree<a href="brightautumn.html" onclick="window.open(this.href); return false;">
+				<img src="img/brightautumn.jpg" alt="brgaut" /></a></p>
+			<p class="description">Mountain Lakes<a href="mtnlakes.html" onclick="window.open(this.href); return false;">
+				<img src="img/mountainlake.jpg" alt="mountainlake" /></a></p>
+			<br />
+			<br />	
+		</div>
+		
+		<div id="main">
+			<br />
+  			<center><p class="bold">Contact Us</p></center>
+  		</div>
+  		
+  		
+  		<form id="registerform" action="send_form_email.php" method="post">
+			<p class="formhead1">
+				Contact Us:
+			</p>
+			<input name="sendto" type="hidden" value="harmonst@yahoo.com" />
+			<input name="subject" type="hidden" value="Contact Seller" />
+			<input name="location" type="hidden" value="thanks.html" />
+		
+		
+			
+			<br />
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" 
+			required autofocus title="Name: 4-30 chars, UPPER/lower case and - or ' only!"
+			pattern="[a-zA-Z-' ]{4,30}" onfocus="nmsg()" 
+			placeholder="Name"/>	
+			<br />
+				
+			
+			
+			
+			<label for="email">Email Address</label>
+			<input type="email" id="email" name="email" 
+			required onfocus="emailmsg()" title="Email: Must be valid email address!"
+			pattern="[a-z0=9-_$.]+@[a-z0-9-_.]+\.[a-z]{2,20}" 
+			placeholder="Email"/>	
+			<br />
+			
+			
+			
+			
+			Comments:
+			<br />
+			<textarea name="comments" id="comments" rows="5" cols="49" 
+			required maxlength="500" onfocus="commsg()"
+		 	title="Please enter between 1 and 500 characters!"
+		 	placeholder="Comments"></textarea>	
+		 	
+		
+			<p class="submit">
+				
+				<input type="submit" value="Submit" />
+			
+				
+				<span class="reset"> 
+					<input type="reset" value="Reset" onclick="history.go(0)" />
+				</span>
+			</p>
+  		
+
+  		
+  		
+  		
+  
+  		
+  		<div id="footer">
+  			<p>&copy; 2014, Soonthorn Cheevasit</p>
+  		</div>
+		
+	
+	
+	
+	</body>
+</html>
