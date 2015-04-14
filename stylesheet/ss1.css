@@ -78,6 +78,25 @@ li:hover ul {
 	color:				#ffffff;
 }
 
+/*Contact Form Format*/
+
+table, td, tr {
+    border: 1px solid #04B45F;
+}
+
+tr {
+    background-color: #A9E2F3;
+    color: green;
+}
+
+
+
+
+
+
+
+
+
 
 #coming {
 	width:				155px;
