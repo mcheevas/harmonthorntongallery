@@ -18,7 +18,28 @@
     	<title>Harmon Thornton Gallery</title>
     
     	
-		<link rel="icon" href="img/favi.ico" />
+	<link rel="icon" href="img/favi.ico" />
+	
+	<!-- slide show -->
+		<link type='text/css' rel='Stylesheet' href='stylesheet/bjqs-imageslidermaker.css' />
+		<link href='//fonts.googleapis.com/css?family=Titillium+Web:300|Lato:400' rel='stylesheet' type='text/css'>
+			<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+			<script src='bjqs-1.3-imageslidermaker.js'></script>
+			<script>
+   				$(function() {
+     					$('#imageslider').bjqs({
+       					width: 700,
+       					height: 480,
+       					animtype: 'slide',
+       					responsive: false,
+       					automatic: true,
+       					keyboardnav: false,
+       					markertype: '1',
+       					prevtext: '<<',
+       					nexttext: '>>'
+     					});
+   				});
+			</script>
 	
 	</head>
     
@@ -94,35 +115,26 @@
   		</div>
   		
   		
-  		<center><div id="captioned-gallery">
-			<figure class="slider">
-				<figure>
-					<img src="img/brook.jpg" alt>
-					<figcaption>"Brook in the Wood"</figcaption>
-				</figure>
-				
-				<figure>
-					<img src="img/mountain.jpg" alt>
-					<figcaption>"Mountain"</figcaption>
-				</figure>
-		
-				<figure>
-					<img src="img/brightautumn.jpg" alt>
-					<figcaption>"Bright Autumn Trees"</figcaption>
-				</figure>
-		
-				<figure>
-					<img src="img/autumn.jpg" alt>
-					<figcaption>"Autumn"</figcaption>
-				</figure>
-		
-				<figure>
-					<img src="img/prettyautumn.jpg" alt>
-					<figcaption>"A Pretty Autumn Day"</figcaption>
-				</figure>
-		
-			</figure>
-		</div></center>
+  		<!-- slide show -->
+			<center><div id='imageslider'>
+  				<ul class='bjqs'>
+    				<li class='slide-1'>
+      					<div class='caption'>Autumn</div>
+    				</li>
+    				<li class='slide-2'>
+      					<div class='caption'>Brook in the Wood</div>
+    				</li>
+    				<li class='slide-3'>
+      					<div class='caption'>Forest</div>
+    				</li>
+    				<li class='slide-4'>
+      					<div class='caption'>Mountain Lake</div>
+    				</li>
+    				<li class='slide-5'>
+      					<div class='caption'>Bright Autumn Trees</div>
+    				</li>
+  				</ul>
+			</div></center>
   		
 
   		
